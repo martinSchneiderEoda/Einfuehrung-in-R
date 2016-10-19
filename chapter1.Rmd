@@ -366,7 +366,7 @@ Beachten Sie in R die Groß- und Kleinschreibung!
 
 *** =hint 
 Ersetzen Sie die Werte im Editor mit den Werten, die bei der Übung vorgesehen sind. Zum Beispiel: 
-`my_numeric <- 42` den Wert 42 für die Variable `my_numeric` zuweisen. 
+`my_numeric <- 42` um der Variable `my_numeric` den Wert 42 zu zuweisen. 
 
 *** =pre_exercise_code
 ```{r}
@@ -412,7 +412,7 @@ success_msg("Gute Arbeit! Bitte machen Sie mit der nächsten Übung weiter.")
 Können Sie sich daran erinnern, dass wenn Sie `5 + "six"` addieren, Sie eine Fehlermeldung aufgrund fehlender Übereinstimmung in Datentypen bekamen? Vermeiden Sie die Situation vorher, indem Sie die Variable prüfen. Dafür können Sie die Funktion so nutzen, wie Sie es auf der rechten Seite sehen können.
 
 *** =instructions
-Vervollständigen Sie den Code im Editor und geben Sie die Klassen von `my_character` und `my_logical` aus. 
+Vervollständigen Sie den Code im Editor und geben Sie die Datentypen von `my_character` und `my_logical` aus. 
 
 *** =hint
 Der Code, der den Datentyp von `my_numeric` ausgibt, ist bereits eingefügt; tun Sie das Gleiche für `my_character` und `my_logical`. 
