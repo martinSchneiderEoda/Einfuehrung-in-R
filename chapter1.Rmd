@@ -11,7 +11,7 @@ In R wird die #-Taste genutzt um Kommentare zu kennzeichnen, die Ihnen und ander
 
 Sie können die R-Befehle auch direkt in der Konsole ausführen. Dies ist ein guter Weg, um mit R-Code zu experimentieren, da Ihre Eingabe nicht auf Richtigkeit überprüft wird.
 
-*** =instructions
+*** =Übung
 - Im Editor auf der rechten Seite gibt es bereits einige Beispiel-Codes. Erkennen Sie, welche Linien tatsächlich die R Codes und welche Linien die Kommentare sind? 
 - Fügen Sie eine Codezeile hinzu, die die Summe von 6 und 12 berechnet und klicken Sie auf den Button "Antwort abschicken".
 
