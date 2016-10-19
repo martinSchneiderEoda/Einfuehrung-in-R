@@ -149,7 +149,7 @@ my_var <- 4
 Ihre Aufgabe: Vervollständigen Sie den Code im Editor, sodass der Wert 42 der Variable `x` zugeordnet wird. Schicke Sie Ihre Antwort ab. Beachten Sie: Wenn Sie R nach `x` fragen, wird der Wert 42 angezeigt.
 
 *** =hint
-Schauen Sie, wie der Wert 4 in der Anleitung/Anweisung (instructions) der Variable `my_variable` zugeteilt wurde. Machen Sie genau das Gleiche im Editor, aber statt den Wert 4 ordnen Sie die 42 der Variable `x` zu.
+Schauen Sie, wie der Wert 4 im Beispiel der Variable `my_var` zugeteilt wurde. Machen Sie genau das Gleiche im Editor, aber statt demn Wert 4 ordnen Sie die 42 der Variable `x` zu.
 
 *** =pre_exercise_code
 ```{r}
