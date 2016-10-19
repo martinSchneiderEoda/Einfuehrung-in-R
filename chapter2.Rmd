@@ -50,7 +50,7 @@ Fokussieren wir uns zuerst!
 
 Auf Ihrem Weg vom Tellerwäscher zum Millionär finden Sie eine umfangreiche Verwendung von Vektoren. Vektoren sind eindimensionale Arrays, die numerische Daten, Zeichendaten oder logische Daten sein können. Mit anderen Worten ist ein Vektor ein einfaches Werkzeug, um Daten zu speichern. Zum Beispiel können Sie Ihre täglichen Gewinne und Verluste in den Spielcasinos speichern.
 
-In R erstellen Sie einen Vektor in mit der combine Funktion [`c()`](http://www.rdocumentation.org/packages/base/functions/c). Die Vektorelemente werden in der runden Klammer mit einem Komma getrennt. Zum Beispiel:
+In R erstellen Sie einen Vektor mit der combine Funktion [`c()`](http://www.rdocumentation.org/packages/base/functions/c). Die Vektorelemente werden in der runden Klammer mit einem Komma getrennt. Zum Beispiel:
 
 ```
 numeric_vector <- c(1, 2, 3)
@@ -232,9 +232,9 @@ success_msg("Gut gemacht! Gehen Sie zur nächsten Übung.")
 --- type:NormalExercise xp:100 skills:1 key:6858c65a4a
 ## Benennen eines Vektors (2)
 
-Wenn Sie ein guter Data Scientist sein wollen, müssen Sie faul werden. (Sind Sie bereits faul, dann haben Sie gute Chancen eines der außergewöhnlichen Naturtalente im Bereich Data Scientist zu sein.)
+Wenn Sie ein guter Data Scientist sein wollen, müssen Sie faul werden. (Sind Sie bereits faul, dann haben Sie gute Chancen eines der außergewöhnlichen Naturtalente im Bereich Data Science zu sein.)
                                                                      
-In der vorherigen Übung haben Sie vermutlich erfahren, wie frustrierend und langweilig es ist, die Informationen der Wochentage einzugeben. Allerdings, wenn man es aus einer höheren Perspektive betrachtet, ist es eine effizientere Art und Weise, die Vektoren der Wochentage einer **variable** zuzuweisen! 
+In der vorherigen Übung haben Sie vermutlich erfahren, wie frustrierend und langweilig es ist, die Informationen der Wochentage einzugeben. Allerdings, wenn man es aus einer höheren Perspektive betrachtet, ist es jedoch eine effizientere Art und Weise, die Vektoren der Wochentage einer **Variable** zuzuweisen! 
 
 
 *** =instructions
@@ -710,9 +710,9 @@ success_msg("Gut gemacht! Fahren Sie mit der nächsten Übung fort, um sich mehr
 --- type:NormalExercise xp:100 skills:1 key:27976b79f4
 ## Vektorenauswahl: die guten Zeiten (3)
 
-Das Auswählen mehrerer Elemente von `poker_vector` mit `c(2, 3, 4)` ist nicht sehr angenehm. Viele Datascientist sind faule Menschen, so dass Sie einen leichteren Weg aussuchen, um dies zu tun: `c(2, 3, 4)` kann mit `2:4` abgekürtzt werden, die einen Vektor mit allen natürlichen Nummern aus 2 bis zu 4 generieren.
+Das Auswählen mehrerer Elemente von `poker_vector` mit `c(2, 3, 4)` ist nicht sehr angenehm. Viele Datascientists sind faule Menschen, so dass Sie einen leichteren Weg aussuchen, um dies zu tun: `c(2, 3, 4)` kann mit `2:4` abgekürzt werden. Dies gerneriert einen Vektor mit allen natürlichen Nummern von 2 bis zu 4.
 
-Einen anderen Weg, um die Wochenmitte Ergebnisse zu finden, ist `poker_vector[2:4]`. Beachten Sie, wie der Vektor `2:4` zwischen den eckigen Klammern platziert wird, um die Elemente von 2 bis zu 4 zu wählen. 
+Ein anderer Weg, um die Wochenmitte Ergebnisse zu finden, ist `poker_vector[2:4]`. Beachten Sie, wie der Vektor `2:4` zwischen den eckigen Klammern platziert wird, um die Elemente von 2 bis zu 4 zu wählen. 
 
 *** =instructions
 Weisen Sie dem `roulette_selection_vector` die Roulett Ergebnisse von Dienstag bis Freitag zu; nutzen Sie `:` damit es für Sie einfacher ist.
