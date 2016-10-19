@@ -60,6 +60,7 @@ In seiner grundlegendsten Form kann R als ein einfacher Rechner verwendet werden
 - Modulo: `%%`
 
 Die letzten beiden Operatoren benötigen eine Erklärung:
+
 - Der `^` Operator steigert die linke Zahl durch die Macht der rechten Zahl: zum Beispiel `3^2` ist 9.
 
 - Der Operator Modulo liefert den Rest durch die Division der linken Zahl durch die rechte Zahl, zum Beispiel 5 Modulo 3 oder `5 %% 3` ist 2.
