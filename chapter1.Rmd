@@ -11,7 +11,7 @@ In R wird die #-Taste genutzt um Kommentare zu kennzeichnen, die Ihnen und ander
 
 Sie können die R-Befehle auch direkt in der Konsole ausführen. Dies ist ein guter Weg, um mit R-Code zu experimentieren, da Ihre Eingabe nicht auf Richtigkeit überprüft wird.
 
-*** =Übung
+*** =instructions
 - Im Editor auf der rechten Seite gibt es bereits einige Beispiel-Codes. Erkennen Sie, welche Linien tatsächlich die R Codes und welche Linien die Kommentare sind? 
 - Fügen Sie eine Codezeile hinzu, die die Summe von 6 und 12 berechnet und klicken Sie auf den Button "Antwort abschicken".
 
@@ -60,7 +60,7 @@ In seiner grundlegendsten Form kann R als ein einfacher Rechner verwendet werden
 - Modulo: `%%`
 
 Die letzten beiden Operatoren benötigen eine Erklärung:
-- Der `^` Operator steigert die linke Zahl durch die Macht der rechten Zahl: zum Beispiel `3^2` ist 9.
+- Der `^` Operator steigert die linke Zahl durch die Macht der rechten Zahl: zum Beispiel `3^2` ist 9.\n
 - Der Operator Modulo liefert den Rest durch die Division der linken Zahl durch die rechte Zahl, zum Beispiel 5 Modulo 3 oder `5 %% 3` ist 2.
 
 Mit diesem Wissen folgen Sie den nachstehenden Anweisungen, um die Übung abzuschließen.
