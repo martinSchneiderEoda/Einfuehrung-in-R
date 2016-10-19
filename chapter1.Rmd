@@ -5,7 +5,7 @@ description : "In diesem Kapitel werden Sie Ihre ersten Schritte mit R machen. S
 
 --- type:NormalExercise xp:100 skills:1 key:15d729634a
 ## Wie R funktioniert
-Auf der rechten Seite geben Sie im Editor den R Code ein, um die Übung zu lösen. Wenn Sie auf den Button "Antwort abschicken" klicken, wird jede Codezeile interpretiert und durch R ausgeführt und Sie erhalten eine Nachricht, ob der von Ihnen erstellte Code richtig war. Ihre Ausgabe des R-Codes wird in der Konsole unten rechts angezeigt.
+Auf der rechten Seite geben Sie im Editor den R Code ein, um die Übung zu lösen. Wenn Sie auf den Button "Submit Answer" klicken, wird jede Codezeile interpretiert und durch R ausgeführt und Sie erhalten eine Nachricht, ob der von Ihnen erstellte Code richtig war. Ihre Ausgabe des R-Codes wird in der Konsole unten rechts angezeigt.
 
 In R wird die #-Taste genutzt um Kommentare zu kennzeichnen, die Ihnen und anderen R-Nutzern zusätzliche Informationen über den Code bereitstellen. Kommentare werden nicht als R-Code ausgeführt, somit beeinflussen sie die Ergebnisse nicht. Zum Beispiel _Berechnen Sie 3+4_ ist im Editor rechts ein Kommentar.
 
