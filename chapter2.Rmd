@@ -766,10 +766,10 @@ success_msg("Großartig! Awesome! Der Doppelpunkt Operator ist sehr nützlich un
 Eine andere Möglichkeit, die vorherige Übung zu bewältigen ist das Verwenden von Namen der Vektorelemente (Montag, Dienstag, ...) statt ihrer numerischen Positionen. Zum Beispiel, 
 
 ```
-poker_vector["Monday"]
+poker_vector["Montag"]
 ```
 
-wählt das erste Element von `poker_vector`, da `"Monday"` der Name des ersten Elements ist.
+wählt das erste Element von `poker_vector`, da `"Montag"` der Name des ersten Elements ist.
 
 Genau wie Sie in der vorherigen Übung mit Numeric geübt haben, können Sie auch die Elementnamen verwenden, um mehrere Elemente auszuwählen, zum Beispiel: 
 
@@ -778,7 +778,7 @@ poker_vector[c("Monday","Tuesday")]
 ```
 
 *** =instructions
-- Wählen Sie die ersten drei Elemente in `poker_vector` durch ihre Namen: `"Montag"`, `"Dienstag"` und `"Mittwoch"`. Weisen Sie den Ergebnissen dem `poker_start` zu.
+- Wählen Sie die ersten drei Elemente in `poker_vector` durch ihre Namen: `"Montag"`, `"Dienstag"` und `"Mittwoch"`. Weisen Sie die Ergebnissen der Variable `poker_start` zu.
 - Berechnen Sie den Durchschnitt der Werte in `poker_start` mit der Funktion [`mean()`](http://www.rdocumentation.org/packages/base/functions/mean). Geben Sie einfach das Ergebnis aus, so dass Sie es überprüfen können.
 
 *** =hint
@@ -816,7 +816,7 @@ names(poker_vector) <- days_vector
 names(roulette_vector) <- days_vector
 
 # Wählen Sie die Ergebnisse für Montag, Dienstag und Mittwoch
-poker_start <- poker_vector[c("Monday", "Tuesday", "Wednesday")]
+poker_start <- poker_vector[c("Montag", "Dienstag", "Mittwoch")]
   
 # Berechnen Sie den Mittelwert der Elemente in poker_start
 mean(poker_start)
@@ -829,7 +829,7 @@ test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_start", 
-            incorrect_msg = "Es scheint so, dass `poker_start` nicht die ersten drei Werte von `poker_vector` enthält. Sie können `c(\"Monday\", \"Tuesday\", \"Wednesday\")` in eckigen Klammern verwenden.")
+            incorrect_msg = "Es scheint so, dass `poker_start` nicht die ersten drei Werte von `poker_vector` enthält. Sie können `c(\"Montag\", \"Dienstag\", \"Mittwoch\")` in eckigen Klammern verwenden.")
 test_output_contains("mean(poker_start)", incorrect_msg = "Haben Sie den richtigen Durchschnittswert von `poker_start` berechnet und ausgegeben? Verwenden Sie `mean(poker_start)`.")
 success_msg("Gute Arbeit! Vektoren können durch Index oder durch Namen ausgewählt werden, aber Sie können auch Vektoren gegenübergestellt werden. Die nächste Übung wird Ihnen zeigen wie!");
 ```
@@ -996,7 +996,7 @@ Nun wollen Sie auch die Tage wissen, an denen Sie einen positiven Ertrag beim Ro
 - Weisen Sie die Beträge, die Sie an den Tagen positiv beendeten, der Variable `roulette_winning_days` zu. Dieser Vektor enthält den positiven Gewinn von `roulette_vector`.
 
 *** =hint
-Sobald Sie `selection_vector` richtig berechnet haben, können Sie wieder `roulette_vector[selection_vector]` verwenden, um die positiven Ergebnisse von `roulette_vector` zu wählen..
+Sobald Sie `selection_vector` richtig berechnet haben, können Sie wieder `roulette_vector[selection_vector]` verwenden, um die positiven Ergebnisse von `roulette_vector` zu wählen.
 
 *** =pre_exercise_code
 ```{r}

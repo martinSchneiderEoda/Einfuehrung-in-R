@@ -24,7 +24,7 @@ In der Funktion [`matrix()`](http://www.rdocumentation.org/packages/base/functio
 Erstellen Sie eine Matrix mit 3 Zeilen mit den Zahlen 1 bis 9, befüllt zeilenweise. 
 
 *** =hint
-Lesen Sie die Aufgabe sorgfältig, denn die Antwort ist darin inthalten!
+Lesen Sie die Aufgabe sorgfältig, denn die Antwort ist darin inhalten!
 
 *** =pre_exercise_code
 ```{r}
@@ -284,7 +284,7 @@ big_matrix <- cbind(matrix1, matrix2, vector1 ...)
 Fügen Sie `worldwide_vector` als eine neue Spalte der Matrix `star_wars_matrix` zu und weisen Sie die Ergebnisse der `all_wars_matrix` zu. Verwenden Sie die Funktion [`cbind()`](http://www.rdocumentation.org/packages/base/functions/cbind).
 
 *** =hint
-In dieser Übung sollten Sie die zwei Variablen `cbind()` : `star_wars_matrix` and `worldwide_vector`, in dieser Reihenfolge übergeben. Weisen Sie das Ergbenis der `all_wars_matrix` zu.
+In dieser Übung sollen Sie die zwei Variablen `star_wars_matrix` und `worldwide_vector` mit Hilfe des `cbind()`-Befehls zusammenfügen. Weisen Sie das Ergebnis der `all_wars_matrix` zu.
 
 *** =pre_exercise_code
 ```{r}

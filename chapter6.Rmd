@@ -8,9 +8,9 @@ description : Im Vergleich zu Vektoren, können Listen Komponenten unterschiedli
 
 Herzlichen Glückwunsch! An dieser Stelle des Kurses sind Sie schon vertraut mit:
 
-- **Vectors** (eindimensionales Array): kann nummerische, Zeichen oder logische Werte enthalten. Die Elemente in einem Vektor haben alle die gleichen Datentypen.
-- **Matrices** (zweidimensionales Array): kann nummerische, Zeichen oder logische Werte enthalten. Die Elemente in einer Matrix haben alle die gleichen Datentypen.
-- **Data frames** (zweidimensionale Objekte): kann nummerische, Zeichen oder logische Werte enthalten. Innerhalb einer Spalte haben alle Elemente den gleichen Datentyp, aber verschiedene Spalten können von unterschiedlichen Datentypen sein.
+- **Vektoren** (eindimensionales Array): kann nummerische, Zeichen oder logische Werte enthalten. Die Elemente in einem Vektor haben alle die gleichen Datentypen.
+- **Matrizen** (zweidimensionales Array): kann nummerische, Zeichen oder logische Werte enthalten. Die Elemente in einer Matrix haben alle die gleichen Datentypen.
+- **Dataframes** (zweidimensionale Objekte): kann nummerische, Zeichen oder logische Werte enthalten. Innerhalb einer Spalte haben alle Elemente den gleichen Datentyp, aber verschiedene Spalten können von unterschiedlichen Datentypen sein.
 
 Ziemlich gut für einen R-Neuling, nicht wahr? ;-)
 
@@ -44,7 +44,7 @@ success_msg("Achtung, fertig, los! Machen Sie bitte mit der nächsten Übung wei
 --- type:NormalExercise xp:100 skills:1 key:68f93c5c504616bd18876da52cd123277d56fc8b
 ## Warum brauchen Sie Listen? (2)
 
-Eine **list** in R ist ähnlich zu Ihren to-do Listen bei der Arbeit oder in der Schule: Die verschiedenen Punkte auf der Liste unterscheiden sich vermutlich unter anderem in Länge, Merkmal und, Art der zu erledigenden Aktivität. 
+Eine **Liste** in R ist ähnlich zu Ihren to-do Listen bei der Arbeit oder in der Schule: Die verschiedenen Punkte auf der Liste unterscheiden sich vermutlich unter anderem in Länge, Merkmal und, Art der zu erledigenden Aktivität. 
 
 Eine Liste in R ermöglicht es Ihnen, eine Vielzahl von Objekten unter einem Namen (dem Name der Liste) in einer geordneten Art und Weise zu sammeln. Diese Objekte können neben Matrizen, Vektoren und, Dataframes, auch andere Listen usw. sein. Es ist nicht erforderlich, dass diese Objekte miteinander in einer Beziehung stehen.
 
@@ -86,7 +86,7 @@ Lassen Sie uns unsere erste Liste erstellen! Zum Aufbau einer Liste verwenden Si
 my_list <- list(comp1, comp2 ...)
 ```
 
-Die Argumente für die Listenfunktion sind die Listenkomponenten. Denken Sie daran, dass diese Komponenten unter anderem Matrizen, Vektoren oder, andere Listen sein können, ...
+Die Argumente für die Listenfunktion sind die Listenkomponenten. Denken Sie daran, dass diese Komponenten unter anderem Matrizen, Vektoren oder andere Listen sein können, ...
 
 *** =instructions
 Erstellen Sie eine Liste mit dem Namen `my_list`, die die Variablen `my_vector`, `my_matrix` und `my_df` als Listenkomponenten enthält. 
@@ -238,9 +238,9 @@ Beginnen Sie mit einer Liste für den Film "The Shining". Wir haben bereits die 
 *** =instructions
 Vervollständigen Sie den Code auf der rechten Seite, um `shining_list` zu erstellen; Er enthält drei Elemente:
 
-- Filmname: eine Zeichenkette mit den Filmtiteln (gespeichert in `mov`)
-- Schauspieler: ein Vektor mit den Namen der wichtigsten Schauspiel und Schauspielrinnen (gespeichert in `act`)
-- Bewertungen: ein Dataframe, der einige Bewertungen (gespeichert in `rev`) enthält
+- moviename: eine Zeichenkette mit den Filmtiteln (gespeichert in `mov`)
+- actors: ein Vektor mit den Namen der wichtigsten Schauspiel und Schauspielrinnen (gespeichert in `act`)
+- reviews: ein Dataframe, der einige Bewertungen (gespeichert in `rev`) enthält
 
 Vergessen Sie nicht die Listenkomponenten zu benennen (Namen sind Filmnamen, Schauspieler und Bewertungen).
 
@@ -355,7 +355,7 @@ success_msg("Sehr gut! Das Auswählen von Elementen von einer Liste ist ziemlich
 
 
 --- type:NormalExercise xp:100 skills:1 key:ca3f7b71504ff93940cf65889d406a58c5b0019c
-## Das Hinzufügen weiter Filminformationen in die Liste
+## Das Hinzufügen weiterer Filminformationen in die Liste
 
 Sie können stolz auf Ihre erste Liste sein, Sie teilten es bereits mit den Mitgliedern Ihres Filmhobbyclubs. Jedoch bemerkte einer der älteren Mitgliedern, ein Typ namens M. McDowell, dass Sie vergessen haben, das Freigabejahr hinzuzufügen. Angesichts Ihrer Ambitionen im nächsten Jahr Präsident des Clubs zu werden, entscheiden Sie sich dazu, diese Informationen der Liste hinzuzufügen.
 
@@ -365,7 +365,7 @@ Um Elemente der Liste hinzuzufügen, können Sie die Funktion [`c()`](http://www
 ext_list <- c(my_list , my_val)
 ``` 
 
-Dieser Befehl erweitert einfach die Originalliste, `my_list` mit der Komponente `my_val`. Diese Komponente wird an das Ende der Liste angehängt. Wenn Sie dem neuen Listeneintrag einen Namen geben wolen, fügen Sie einfach den Namen wie zuvor ein:
+Dieser Befehl erweitert einfach die Originalliste, `my_list` mit der Komponente `my_val`. Diese Komponente wird an das Ende der Liste angehängt. Wenn Sie dem neuen Listeneintrag einen Namen geben wollen, fügen Sie einfach den Namen wie zuvor ein:
 
 ```
 ext_list <- c(my_list, my_name = my_val)

@@ -221,7 +221,7 @@ Der Dataframe `planets_df` sollte 8 Beobachtungen und 5 Variablen haben. Er wurd
 Verwenden Sie [`str()`](http://www.rdocumentation.org/packages/utils/functions/str), um die Struktur der neuen `planets_df` Variable zu untersuchen.
 
 *** =hint
-`planets_df` ist bereits in Ihrem Arbeitsbereich verfügbar. Der Trick ist einfach `str(planets_df)`.
+`planets_df` ist bereits in Ihrem Arbeitsbereich verfügbar. Der Trick ist einfach `str(planets_df)` zu verwenden.
 
 *** =pre_exercise_code
 ```{r}
@@ -320,10 +320,10 @@ planets_df[1:3,"type"]
 ```
 
 *** =instructions
-Auswählen und ausgeben der ersten 5 Werte der `"diameter"`Spalte von `planets_df`.
+Lassen Sie sich die ersten 5 Werte der `"diameter"` Spalte von `"planets_df"` ausgeben.
 
 *** =hint
-Sie können die ersten fünf Werte mit `planets_df[1:5, ...]` auswählen. Können Sie `...` ausfüllen, dafür müssen Sie nur die Spalte `"diameter"` wählen?
+Sie können die ersten fünf Werte mit `planets_df[1:5, ...]` auswählen. Können Sie `...` ausfüllen? Sie müssen dafür lediglich die Spalte `"diameter"` auswählen?
 
 *** =pre_exercise_code
 ```{r}
@@ -431,7 +431,7 @@ Wenn Sie `rings_vector` in der Konsole eingeben, bekommen Sie:
 Dies bedeutet, dass die ersten vier Beobachtungen (oder Planeten) keine Ringe (`FALSE`) haben, aber die anderen vier (`TRUE`) schon. Allerdings brauchen Sie sich keinen Überblick über alle Planetennamen, deren Durchmesser usw. zu machen. Lassen Sie uns `rings_vector` verwenden, um die Daten der vier Planeten mit Ringen zu wählen.
 
 *** =instructions
-Der Code auf der rechten Seite wählt die Spalte `name` aller Planeten mit Ringen aus. Bearbeiten Sie den Code so, dass statt der Spalte `name`, _all_ Spalten für Planeten mit Ringen ausgewählt sind.
+Der Code auf der rechten Seite wählt die Spalte `name` aller Planeten mit Ringen aus. Bearbeiten Sie den Code so, dass statt der Spalte `name`, _alle_ Spalten für Planeten mit Ringen ausgewählt sind.
 
 *** =hint
 Denken Sie daran die Spalte _all_ auszuwählen. Sie müssen einfach die Spalten innerhalb der `[ ]` leer lassen! Das heißt, Sie benötigen `[rings_vector, ]`.
@@ -533,11 +533,11 @@ success_msg("Sehr gut! Die Funktion `subset()` ist nicht nur prägnanter, sie is
 --- type:NormalExercise xp:100 skills:1 key:6a6fe74d3917c37380f7ac616ce084aa7814fb8a
 ## Sortierung
 
-Die Erstellung von Rankings ist eine der beliebtesten Aktivitäten der Menschhen. Diese Rankings können nützlich (die besten Universitäten der Welt), unterhaltend (die einflussreichsten Filmstarts) oder sinnlos (die besten 007 Doppelgänger) sein.
+Die Erstellung von Rankings ist eine der beliebtesten Aktivitäten der Menschen. Diese Rankings können nützlich (die besten Universitäten der Welt), unterhaltend (die einflussreichsten Filmstars) oder sinnlos (die besten 007 Doppelgänger) sein.
 
-In der Datenanalyse können Sie ihre Daten nach einer bestimmten Variablen im Datensatz sortieren. In R wird dies mit der Hilffunktion [`order()`](http://www.rdocumentation.org/packages/base/functions/order) getan. 
+In der Datenanalyse können Sie ihre Daten nach einer bestimmten Variablen im Datensatz sortieren. In R wird dies mit der Hilfsfunktion [`order()`](http://www.rdocumentation.org/packages/base/functions/order) getan. 
 
-[`order()`](http://www.rdocumentation.org/packages/base/functions/order) ist eine Funktion, die Ihnen die Rangposition jedes Element gibt, wenn es auf eine Variable, wie ein Vektor angewendet wird, zum Beispiel:
+[`order()`](http://www.rdocumentation.org/packages/base/functions/order) ist eine Funktion, die Ihnen die Rangposition jedes Elementes gibt, wenn es auf eine Variable, wie ein Vektor angewendet wird, zum Beispiel:
 
 ```
 > a <- c(100, 10, 1000)

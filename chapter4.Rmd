@@ -180,7 +180,7 @@ Eine gute Illustration sind die Rohdaten, die durch eine Umfrage zur Verfügung 
 survey_vector <- c("M", "F", "F", "M", "M")
 ```
 
-Als nächstes, wenn Sie die Datenanalyse starten wollen, ist Ihr Hauptanliegen einen schönen Überblick über alle Variablen und ihre Bedeutng zu erhalten. An diesem Punkt werden Sie oft die Faktor Levels zu `"Male"` und `"Female"` ändern wollen, um sich die Arbeit zu erleichertn.
+Als nächstes, wenn Sie die Datenanalyse starten wollen, ist Ihr Hauptanliegen einen schönen Überblick über alle Variablen und ihre Bedeutng zu erhalten. An diesem Punkt werden Sie oft die Faktor Levels zu `"Male"` und `"Female"` ändern wollen, um sich die Arbeit zu erleichtern.
 
 **Achtung:** die Reihenfolge, mit der Sie die Levels zuordnen, ist wichtig. Wenn Sie `levels(factor_survey_vector)` eingeben, werden Sie sehen, dass R `[1] "F" "M"` ausgibt. Wenn Sie die Faktor Levels bei der Erstellung eines Vektors nicht angeben, weist R sie automatisch und alphabetisch zu.  Um richtig `"F"` `"Female"` und `"M"` `"Male"` zuzuweisen, sollten Sie die Levels in dieser Reihenfolge `c("Female", "Male")` eingeben.
 
@@ -367,21 +367,21 @@ Da `"männlich"` und `"weiblich"` ungeordnete (oder nominale) Faktor Levels sind
 
 Aber dies ist nicht immer der Fall! Manchmal werden Sie sich auch mit Faktoren befassen, die eine natürliche Ordnung zwischen den Kategorien haben. Wenn dies der Fall ist, müssen wir sicherstellen, dass wir diese Informationen an R weitergeben... 
 
-Lassen Sie uns sagen, dass Sie ein Forschungsteam mit fünf Datenanalysten leiten und deren Leistung bewerten wollen. Um dies zu tun, werden Sie die Arbeitsgeschwindigkeit beobachten, jeden Analysten als `"langsam"`, `"schnell"` oder `"verrückt"` bewerten und die Ergebnisse in `speed_vector` speichern.
+Lassen Sie uns sagen, dass Sie ein Forschungsteam mit fünf Datenanalysten leiten und deren Leistung bewerten wollen. Um dies zu tun, werden Sie die Arbeitsgeschwindigkeit beobachten, jeden Analysten als `"slow"`, `"fast"` oder `"insane"` bewerten und die Ergebnisse in `speed_vector` speichern.
 
 *** =instructions
 Als ersten Schritt ordnen Sie dem `speed_vector` folgende Informationen zu:
 
-- Analyst 1 ist schnell,
-- Analyst 2 ist langsam,
-- Analyst 3 ist langsam,
-- Analyst 4 ist schnell und
-- Analyst 5 ist verrückt.
+- Analyst 1 ist `"fast"`,
+- Analyst 2 ist `"slow"`,
+- Analyst 3 ist `"slow"`,
+- Analyst 4 ist `"fast"` und
+- Analyst 5 ist `"insane"`.
 
 Kein Grund zu spezifizieren, diese sind noch Faktoren.
 
 *** =hint
-Weisen Sie dem `speed_vector` einen Vektor zu, der die Zeichenketten `"schnell"`, `"langsam"` ... enthält.
+Weisen Sie dem `speed_vector` einen Vektor zu, der die Zeichenketten `"fast"`, `"slow"` ... enthält.
 
 *** =pre_exercise_code
 ```{r}
@@ -425,7 +425,7 @@ Durch die Festlegung des Arguments `ordered` gleich `TRUE` in der Funktion [`fac
 Schaffen Sie von `speed_vector` einen geordneten Faktorvektor: `factor_speed_vector`. Setzen Sie `ordered` gleich `TRUE` und `levels` gleich `c("slow", "fast", "insane")`.
 
 *** =hint
-Verwenden Sie [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor), um `factor_speed_vector`, basierend auf `speed_character_vector`, zu erstellen. Das Argument `ordered` sollte gleich `TRUE` gesetzt sein, da es eine natürliche Ordnung ist. Außerdem setzen Sie auch `levels = c("slow", "fast", "insane")`.
+Verwenden Sie [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor), um `factor_speed_vector`, basierend auf `speed_vector`, zu erstellen. Das Argument `ordered` sollte gleich `TRUE` gesetzt sein, da es eine natürliche Ordnung ist. Außerdem setzen Sie auch `levels = c("slow", "fast", "insane")`.
 
 *** =pre_exercise_code
 ```{r}
@@ -476,7 +476,7 @@ success_msg("Großartig! Werfen Sie einen Blick auf die Konsole. Es wird jetzt a
 
 Sie haben einen schlechten Tag an der Arbeit, 'Datenanalyst Nummer zwei' betritt Ihr Büro und beginnt sich zu beschweren, dass 'Datenanalyst Nummer fünf' das gesamte Projekt verlangsamt. Da Sie wissen, dass 'Datenanalyst Nummer zwei' den Ruf eines Schlaumeiers hat, entscheiden Sie sich als erstes seine Aussage zu prüfen. 
 
-Die Tatsache, dass `factor_speed_vector` jetzt geornedt ist, ermöglicht uns, verschiedene Elemente (die Datenanalysten in diesem Fall) zu vergleichen. Sie können dies einfach durch das Verwenden der bekannten Operatoren tun. 
+Die Tatsache, dass `factor_speed_vector` jetzt geordnet ist, ermöglicht uns, verschiedene Elemente (in diesem Fall die Datenanalysten) zu vergleichen. Sie können dies einfach durch das Verwenden der bekannten Operatoren tun. 
 
 *** =instructions
 - Verwenden Sie `[2]`, um den Faktorwert vom zweiten Datenanalysten aus `factor_speed_vector` zu wählen. Speichern Sie ihn als `da2`.
