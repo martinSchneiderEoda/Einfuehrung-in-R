@@ -1,17 +1,17 @@
 --- 
 title_meta  : Kapitel 2
 title       : Vektoren
-description : "In diesem kostenlosen R-Kurs machen wir eine Reise nach Las Vegas. Hier lernen Sie, wie Sie Ihre Ergebnisse beim Glücksspiel unter Verwendung von Vektoren in R analysieren können! Am Ende dieses Kapitels werden Sie in der Lage sein, Vektoren in R zu erstellen, sie zu benennen, Elemente aus ihnen zu wählen und verschiedene Vektoren zu vergleichen."
+description : "In diesem Kapitel unternehmen wir eine Reise nach Las Vegas. Hier lernen Sie, wie Sie Ihre Ergebnisse beim Glücksspiel unter Verwendung von Vektoren in R analysieren können! Am Ende dieses Kapitels werden Sie in der Lage sein, Vektoren in R zu erstellen, sie zu benennen, Elemente aus ihnen zu wählen und verschiedene Vektoren zu vergleichen."
 
 --- type:NormalExercise xp:100 skills:1 key:d9b453dbdd
 ## Erstellen eines Vektors
 
 Sind Sie ein Glückspilz? Dieses Kapitel nimmt Sie mit auf eine Reise in die Stadt der Sünde, auch bekannt als *Statisticians Paradise*!
 
-Dank R und ihrer neuen datenanalytischen Fähigkeiten werden Sie lernen, wie Sie Ihre Leistung in den Spielcasinos und Ihre Karriere als Profi-Spieler verbessern. Dieses Kapitel zeigt Ihnen, wie Sie ganz leicht den Überblick über Ihren Spielerfolg erhalten und wie Sie einige einfache Analysen vorheriger Aktionen machen können. Nächster Halt: Vegas Baby... VEGAS!!
+Dank R und Ihrer neuen datenanalytischen Fähigkeiten werden Sie lernen, wie Sie Ihre Leistung in den Spielcasinos und Ihre Karriere als Profi-Spieler verbessern können. Dieses Kapitel zeigt Ihnen, wie Sie ganz leicht einen Überblick über Ihren Spielerfolg bekommen und wie Sie einige einfache Analysen vorheriger Aktionen erstellen. Nächster Halt: Vegas, Baby!
 
 *** =instructions
-- Erinnern Sie sich noch, was Sie im ersten Kapitel gelernt haben? Weisen Sie den Wert `"Go!"` der Variable `vegas` zu. Denken Sie in R daran: Klein- und Großschreibung!
+- Erinnern Sie sich noch, was Sie im ersten Kapitel gelernt haben? Weisen Sie den Wert `"Go!"` der Variable `vegas` zu. Denken Sie in R an die Groß- und Kleinschreibung!
 
 *** =hint
 Geben Sie die folgende Zeile im Editor ein:
@@ -38,7 +38,7 @@ vegas <- "Go!"
 
 *** =sct
 ```{r}
-test_object("vegas", incorrect_msg = "Stellen Sie sicher, dass der richtige Wert für `vegas` gewählt wurde. Vergessen Sie nicht in R die Klein- und Großschreibung!")
+test_object("vegas", incorrect_msg = "Stellen Sie sicher, dass der richtige Wert für `vegas` gewählt wurde. Vergessen Sie nicht: In R unterscheidet sich die Klein- und Großschreibung!")
 success_msg("Sehr gut! Gehen Sie zur nächsten Übung.")
 ```
 
@@ -46,9 +46,9 @@ success_msg("Sehr gut! Gehen Sie zur nächsten Übung.")
 --- type:NormalExercise xp:100 skills:1 key:fd427db76f
 ## Erstellen eines Vektors (2)
 
-Fokussieren wir uns zuerst!
+Doch zuerst: Konzentration!
 
-Auf Ihrem Weg vom Tellerwäscher zum Millionär finden Sie eine umfangreiche Verwendung von Vektoren. Vektoren sind eindimensionale Arrays, die numerische Daten, Zeichendaten oder logische Daten sein können. Mit anderen Worten ist ein Vektor ein einfaches Werkzeug, um Daten zu speichern. Zum Beispiel können Sie Ihre täglichen Gewinne und Verluste in den Spielcasinos speichern.
+Auf Ihrem Weg vom Tellerwäscher zum Millionär finden Sie eine umfangreiche Verwendung von Vektoren. Vektoren sind eindimensionale Arrays, die numerische Daten, Zeichendaten oder logische Daten sein können. Mit anderen Worten ist ein Vektor ein einfaches Werkzeug, um Daten zu speichern. Zum Beispiel können Sie mit Vektoren Ihre täglichen Glückspspiel-Gewinne und -Verluste speichern.
 
 In R erstellen Sie einen Vektor mit der combine Funktion [`c()`](http://www.rdocumentation.org/packages/base/functions/c). Die Vektorelemente werden in der runden Klammer mit einem Komma getrennt. Zum Beispiel:
 
@@ -60,7 +60,7 @@ character_vector <- c("a", "b", "c")
 Sobald Sie diese Vektoren in R erstellt haben, können Sie diese nutzen, um Berechnungen durchzuführen.
 
 *** =instructions 
-Vervollständigen Sie den Code, so dass `boolean_vector` die drei Elemente: `TRUE`, `FALSE` and `TRUE` (in dieser Reihenfolge) enthält. 
+Vervollständigen Sie den Code, sodass `boolean_vector` die drei Elemente: `TRUE`, `FALSE` and `TRUE` (in dieser Reihenfolge) enthält. 
 
 *** =hint 
 Weisen Sie `c(TRUE, FALSE, TRUE)` der Variable `boolean_vector` mit dem Operator `<-` operator zu.
@@ -90,12 +90,12 @@ boolean_vector <- c(TRUE, FALSE, TRUE)
 
 *** =sct
 ```{r}
-msg <- "Ändern Sie nicht den Code der `numeric_vector` und `character_vector` definiert!"
+msg <- "Ändern Sie nicht den Code, der `numeric_vector` und `character_vector` definiert!"
 test_object("numeric_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("character_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("boolean_vector",
-            incorrect_msg = "Vergewissern Sie sich, dass Sie `boolean_vector` die richtigen Werte zugewiesen haben. Verwenden Sie `c(TRUE, FALSE, TRUE)`. Machen Sie keine Anführungszeichen um `TRUE` und `FALSE`! und stellen Sie sicher, dass Sie dies selbe Reihenfolge, wie in der Beschreibung, verwendet haben.")
-success_msg("Perfekt! Beachten Sie, dass ein Leerzeichen hinter dem Komma in der Funktion `c()` die Lesbarkeit Ihres Codes verbessert! Lassen Sie uns mehr Vektoren in der nächsten Übung erstellen.")
+            incorrect_msg = "Vergewissern Sie sich, dass Sie `boolean_vector` die richtigen Werte zugewiesen haben. Verwenden Sie `c(TRUE, FALSE, TRUE)`. Machen Sie keine Anführungszeichen um `TRUE` und `FALSE`! und stellen Sie sicher, dass Sie dieselbe Reihenfolge wie in der Beschreibung verwendet haben.")
+success_msg("Perfekt! Beachten Sie, dass ein Leerzeichen hinter dem Komma in der Funktion `c()` die Lesbarkeit Ihres Codes verbessert! Lassen Sie uns in der nächsten Übung mehr Vektoren erstellen.")
 ```
 
 
@@ -108,21 +108,21 @@ Bevor Sie eine erste Analyse machen, sammeln Sie alle Gewinne und Verluste von d
 
 Für `poker_vector`: 
 
-- Am Montag gewannen Sie $140
-- Am Dienstag verloren Sie $50
-- Am Mittwoch gewannen Sie $20 
-- Am Donnerstag verloren Sie $120
-- Am Freitag gewannen Sie $240
+- Am Montag haben Sie $140 gewonnen
+- Am Dienstag haben Sie $50 verloren
+- Am Mittwoch haben Sie $20 gewonnen
+- Am Donnerstag haben Sie $120 verloren
+- Am Freitag haben Sie $240 gewonnen
 
 Für `roulette_vector`: 
 
-- Am Montag verloren Sie $24
-- Am Dienstag verloren Sie $50
-- Am Mittwoch gewannen Sie $100
-- Am Donnerstag verloren Sie $350
-- Am Freitag gewannen Sie $10
+- Am Montag haben Sie $24 verloren
+- Am Dienstag haben Sie $50 verloren
+- Am Mittwoch haben Sie $100 gewonnen
+- Am Donnerstag haben Sie $350 verloren
+- Am Freitag haben Sie $10 gewonnen
 
-Sie spielten nur Poker und Roulette, da nur diese Tische frei waren. Um diese Daten in R zu nutzen, entscheiden Sie sich die Variablen `poker_vector` und `roulette_vector` zu erstellen.
+Sie spielten nur Poker und Roulette, da nur diese Tische frei waren. Um diese Daten in R zu nutzen, entscheiden Sie sich, die Variablen `poker_vector` und `roulette_vector` zu erstellen.
 
 *** =instructions
 Ordnen Sie die Gewinne/ Verluste für Roulette der Variable `roulette_vector` zu.
@@ -132,19 +132,19 @@ Um Ihnen bei diesem Schritt zu helfen, schauen Sie sich die Variable `poker_vect
 
 *** =sample_code
 ```{r}
-# Poker Gewinne von Montag bis Freitag
+# Poker-Gewinne von Montag bis Freitag
 poker_vector <- c(140, -50, 20, -120, 240)
 
-# Roulette Gewinne von Montag bis Freitag
+# Roulette-Gewinne von Montag bis Freitag
 roulette_vector <-  
 ```
 
 *** =solution
 ```{r}
-# Poker Gewinne von Montag bis Freitag
+# Poker-Gewinne von Montag bis Freitag
 poker_vector <- c(140, -50, 20, -120, 240)
 
-# Roulette Gewinne von Montag bis Freitag
+# Roulette-Gewinne von Montag bis Freitag
 roulette_vector <- c(-24, -50, 100, -350, 10)
 ```
 
@@ -161,11 +161,11 @@ success_msg("Sehr gut! Um den Inhalt Ihrer Vektoren zu überprüfen, können Sie
 --- type:NormalExercise xp:100 skills:1 key:3b0b80b192
 ## Benennen eines Vektors
 
-Als Datenanalyst ist es sehr wichtig eine klare Sicht auf die Daten zu haben, die Sie nutzen. Zu verstehen, worauf sich jedes Element bezieht, ist deshalb entscheidend.
+Als Datenanalyst ist es sehr wichtig, eine klare Sicht auf die Daten zu haben, die Sie nutzen. Zu verstehen, worauf sich jedes Element bezieht, ist deshalb entscheidend.
 
-In der vorherigen Übung haben wir Vektoren mit Ihren Gewinnen über die Woche erstellt. Jedes Vektorelement bezieht sich auf einen Tag in der Woche. Es wäre schön, wenn Sie das im Vektor selbst zeigen könnten.
+In der vorherigen Übung haben wir Vektoren mit Ihren Gewinnen aus einer Woche erstellt. Jedes Vektorelement bezieht sich auf einen Tag in der Woche. Es wäre schön, wenn Sie das im Vektor selbst zeigen könnten.
 
-Sie können den Elementen eines Vektors einen Namen geben mit der Funktion `names()`. Werfen Sie einen Blick auf dieses Beispiel:
+Sie können den Elementen eines Vektors mit der Funktion `names()` einen Namen geben. Werfen Sie einen Blick auf dieses Beispiel:
 
 ```
 some_vector <- c("John Doe", "poker player")
@@ -187,13 +187,13 @@ Sie können `names(roulette_vector)` nutzen, um die Namen der Variable `roulette
 
 *** =sample_code
 ```{r}
-# Poker Gewinne von Montag bis Freitag
+# Poker-Gewinne von Montag bis Freitag
 poker_vector <- c(140, -50, 20, -120, 240)
 
-# Roulette Gewinne von Montag bis Freitag
+# Roulette-Gewinne von Montag bis Freitag
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Weisen Sie die Tage dem poker_vector zu
+# Weisen Sie dem poker_vector die Tage zu
 names(poker_vector) <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag")
 
 # Weisen Sie die Tage dem roulette_vectors zu
@@ -201,10 +201,10 @@ names(poker_vector) <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freita
 
 *** =solution
 ```{r}
-# Poker Gewinne von Montag bis Freitag
+# Poke- Gewinne von Montag bis Freitag
 poker_vector <- c(140, -50, 20, -120, 240)
 
-# Roulette Gewinne von Montag bis Freitag
+# Roulette-Gewinne von Montag bis Freitag
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
 # Weisen Sie die Tage dem poker_vector zu
@@ -234,7 +234,7 @@ success_msg("Gut gemacht! Gehen Sie zur nächsten Übung.")
 
 Wenn Sie ein guter Data Scientist sein wollen, müssen Sie faul werden. (Sind Sie bereits faul, dann haben Sie gute Chancen eines der außergewöhnlichen Naturtalente im Bereich Data Science zu sein.)
                                                                      
-In der vorherigen Übung haben Sie vermutlich erfahren, wie frustrierend und langweilig es ist, die Informationen der Wochentage einzugeben. Allerdings, wenn man es aus einer höheren Perspektive betrachtet, ist es jedoch eine effizientere Art und Weise, die Vektoren der Wochentage einer **Variable** zuzuweisen! 
+In der vorherigen Übung haben Sie vermutlich gelernt, wie frustrierend und langweilig es ist, die Informationen der Wochentage einzugeben. Allerdings, aus einer anderen Perspektive betrachtet, ist es eine effizientere Art und Weise, die Vektoren der Wochentage einer **Variable** zuzuweisen! 
 
 
 *** =instructions
@@ -301,17 +301,17 @@ success_msg("Schön! Ein Rat: Versuchen Sie Verdopplung von Code für alle Zeit 
 --- type:NormalExercise xp:100 skills:1 key:da995f099f
 ## Berechnung des Gesamtgewinns
 
-Nun, da Sie die Poker- und Roulettegewinne als Vektoren haben, können Sie beginnen die Daten zu analysieren.
+Nun, da Sie die Poker- und Roulettegewinne als Vektoren haben, können Sie beginnen, die Daten zu analysieren.
 
 Sie wollen folgende Informationen herausfinden:
 
 - Wie viel Gewinn oder Verlust haben Sie pro Tag in der Woche gemacht?
 - Haben Sie in der Woche Geld verloren?
-- Haben Sie in Poker oder in Roulette Geld gewonnen/verloren?
+- Haben Sie beim Poker oder beim Roulette Geld gewonnen/verloren?
 
 Um die Antwort zu bekommen, müssen Sie arithmetische Berechnungen auf Vektoren durchführen.
 
-Es ist wichtig, wenn Sie zwei Vektoren in R zusammenfassen, dann elementeweise zu summieren. Zum Beispiel sind folgende drei Erklärungen völlig äquivalent:
+Dabei ist zu beachten, dass wenn Sie zwei Vektoren in R zusammenfassen, diese elementeweise zu summieren. Zum Beispiel sind folgende drei Erklärungen völlig äquivalent:
 
 ```
 c(1, 2, 3) + c(4, 5, 6)
@@ -328,8 +328,8 @@ c <- a + b
 ```
 
 *** =instructions
-- Nehmen Sie die Summe der Variablen `A_vector` und `B_vector` und weisen Sie dem `total_vector` zu.
-- Überprüfen Sie das Ergebnis durch den Ausdruck von `total_vector`.
+- Nehmen Sie die Summe der Variablen `A_vector` und `B_vector` und weisen Sie sie dem `total_vector` zu.
+- Überprüfen Sie das Ergebnis durch die Ausgabe von `total_vector`.
 
 *** =hint
 Benutzen Sie den Operator `+`, um `A_vector` und `B_vector` zu summieren. Verwenden Sie den Operator `<-` um das Ergebnis dem `total_vector` zuzuweisen.
@@ -385,7 +385,7 @@ In R ist das nur die Summe von `roulette_vector` und `poker_vector`.
 Weisen Sie der Variable `total_daily`, wie viel Geld Sie insgesamt gewonnen oder verloren haben (Poker und Roulette kombiniert).
 
 *** =hint
-Ähnlich wie bei der vorherigen Übung, weisen Sie die Summe von zwei Vektoren einer neuen Variablen `total_daily` zu.
+Ähnlich wie bei der vorherigen Übung, weisen Sie die Summe von zwei Vektoren einer neuen Variable `total_daily` zu.
 
 *** =pre_exercise_code
 ```{r}
@@ -407,7 +407,7 @@ total_daily <-
 
 *** =solution
 ```{r}
-# Poker und Roulette Gewinne von Montag bis Freitag:
+# Poker- und Roulette-Gewinne von Montag bis Freitag:
 poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
 days_vector <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag")
@@ -434,16 +434,16 @@ success_msg("Sehr gut! Fahren Sie mit der nächsten Übung fort.")
 --- type:NormalExercise xp:100 skills:1 key:e66a56b9f0
 ## Berechnung des Gesamtgewinns (3)
 
-Auf der Grundlage der vorherigen Analyse, sieht es aus, als hätten Sie eine Mischung von guten und schlechten Tagen. Dies ist nicht, was Ihr Ego erwartet hat und Sie fragen sich, ob Sie Geld über die Woche verloren haben?
+Auf der Grundlage der vorherigen Analyse sieht es so aus, als hätten Sie eine Mischung von guten und schlechten Tagen. Dies ist nicht, was Ihr Ego erwartet hat! Sie fragen sich, ob Sie Geld über die Woche verloren haben.
 
-Eine Funktion, die Ihnen diese Frage beantwortet ist [`sum()`](http://www.rdocumentation.org/packages/base/functions/sum). Sie berechnet die Summe aller Elemente eines Vektors. Zum Bespiel berechnen Sie die Geldsumme, die Sie beim Poker gewonnen/ verloren haben:
+Eine Funktion, die Ihnen diese Frage beantwortet, ist [`sum()`](http://www.rdocumentation.org/packages/base/functions/sum). Sie berechnet die Summe aller Elemente eines Vektors. Zum Bespiel berechnen Sie die Geldsumme, die Sie beim Poker gewonnen/verloren haben:
 
 ```
 total_poker <- sum(poker_vector)
 ```
 
 *** =instructions
-- Berechnen Sie die Geldsumme, die Sie beim Roulette gewonnen/ verloren haben und weisen Sie sie der Variable `total_roulette` zu.
+- Berechnen Sie die Geldsumme, die Sie beim Roulette gewonnen / verloren haben und weisen Sie sie der Variable `total_roulette` zu.
 - Nun, da Sie die Summe für Roulette und Poker gebildet haben, können Sie ganz einfach `total_week` (Summe von allen Gewinnen und Verlusten der Woche) bestimmen. 
 - Geben Sie `total_week` aus.
 
@@ -520,9 +520,9 @@ success_msg("Sehr gut. Auch wenn das ziemlich schlechte Nachrichten sind...")
 --- type:NormalExercise xp:100 skills:1 key:f532f5332d
 ## Vergleich des Gesamtgewinns
 
-Es sieht also so aus, als würden Sie Geld verlieren. Es ist Zeit, um Ihre Strategie zu überdenken und anzupassen. Dies wird einige tiefere Analysen erfordern... 
+Es sieht also so aus, als würden Sie Geld verlieren. Es ist an der Zeit, Ihre Strategie zu überdenken und anzupassen. Dies wird einige tiefere Analysen erfordern... 
 
-Nach einem kurzen Brainstorming im Jacuzzi Ihres Hotels, realisieren Sie, dass eine mögliche Erklärung Die sein könnte, dass sich Ihre Fähigkeiten beim Poker, nicht aber beim Roulette, verbessert haben. Vielleicht sind deswegen Ihre Gesamtgewinne beim Poker höher (or `>` ) als beim Roulette.
+Nach einem kurzen Brainstorming im Jacuzzi Ihres Hotels realisieren Sie, dass eine mögliche Erklärung sein könnte, dass sich Ihre Fähigkeiten beim Poker, nicht aber beim Roulette, verbessert haben. Vielleicht sind deswegen Ihre Gesamtgewinne beim Poker höher (or `>` ) als beim Roulette.
 
 *** =instructions
 - Berechnen Sie `total_poker` und `total_roulette`, wie in der vorherigen Übung. Verwenden Sie die Funktion `sum()` zweimal.
@@ -591,14 +591,14 @@ success_msg("Gute Arbeit! Machen Sie jetzt bitte mit der nächsten Übung weiter
 --- type:NormalExercise xp:100 skills:1 key:8d78be44e9
 ## Vektorauswahl: Die guten Zeiten
 
-Ihr Gefühl schien richtig zu sein. Es scheint so, dass das Pokerspiel Ihnen mehr liegt als Roulette.
+Ihr Gefühl schien richtig zu sein. Es scheint: Poker liegt Ihnen mehr als Roulette.
 
-Ein anderer möglicher Ansatz für die Untersuchung ist es, Ihre Leistung am Anfang der Woche mit dem Ende der Woche zu vergleichen. 
+Ein anderer möglicher Ansatz für die Untersuchung ist es, Ihre Leistung am Anfang der Woche mit denen am Ende der Woche zu vergleichen. 
 
-Um diese Frage zu beantworten, konzentrieren Sie sich auf eine Auswahl des Vektors `total_vector`. Mit anderen Worten gesagt ist unser Ziel, bestimmte Elemente des Vektors zu wählen. Um die Elemente des Vektors (und später Matrizen, Datenframe) auszuwählen, können Sie die eckigen Klammern verwenden. Zwischen den eckigen Klammern geben Sie die Elemente an, die Sie auswählen. Zum Beispiel, um das erste Element des Vektors zu wählen, geben Sie `poker_vector[1]` ein. Um das zweite Element des Vektors zu wählen, geben Sie `poker_vector[2]` ein, etc. Beachten Sie, dass das erste Element in einem Vektor den Index 1 hat, nicht 0, wie in vielen anderen Programmiersprachen.
+Um diese Frage zu beantworten, konzentrieren Sie sich auf eine Auswahl des Vektors `total_vector`. Mit anderen Worten gesagt, ist es unser Ziel, bestimmte Elemente des Vektors zu wählen. Um die Elemente des Vektors (und später Matrizen, Dataframe...) auszuwählen, können Sie die eckigen Klammern verwenden. Zwischen den eckigen Klammern geben Sie die Elemente an, die Sie auswählen. Um das erste Element des Vektors zu wählen, geben Sie zum Beispiel `poker_vector[1]` ein. Um das zweite Element des Vektors zu wählen, geben Sie `poker_vector[2]` ein, etc. Beachten Sie, dass das erste Element in einem Vektor den Index 1 und nicht 0 hat, wie in vielen anderen Programmiersprachen.
 
 *** =instructions
-Weisen Sie die Poker Ergebnisse von Mittwoch der Variable `poker_wednesday` zu.
+Weisen Sie die Poker-Ergebnisse von Mittwoch der Variable `poker_wednesday` zu.
 
 *** =hint
 Mittwoch ist das dritte Element von `poker_vector` und kann somit mit `poker_vector[3]` ausgewählt werden.
@@ -652,7 +652,7 @@ success_msg("Sehr gut! R macht es möglich, mehrere Elemente eines Vektors auf e
 
 Wie wäre es, Ihre Ergebnisse der Wochenmitte zu analysieren?
 
-Um mehrere Elemente eines Vektors auszuwählen, können Sie die eckigen Klammern am Ende hinzufügen. Sie können zwischen den Klammern zeigen, welche Elemente ausgewählt werden sollen. Zum Beispiel: Angenommen Sie wollen den ersten und den fünften Tag der Woche wählen: dann benutzen Sie den Vektor `c(1, 5)` zwischen den eckigen Klammern. Zum Beispiel wählt der Code das erste und fünfte Element von `poker_vector` aus:
+Um mehrere Elemente eines Vektors auszuwählen, können Sie die eckigen Klammern am Ende hinzufügen. Sie können zwischen den Klammern zeigen, welche Elemente ausgewählt werden sollen. Zum Beispiel: Angenommen Sie wollen den ersten und den fünften Tag der Woche wählen: Dann benutzen Sie den Vektor `c(1, 5)` zwischen den eckigen Klammern. Zum Beispiel wählt der Code das erste und fünfte Element von `poker_vector` aus:
 
 ```
 poker_vector[c(1, 5)]
@@ -710,12 +710,12 @@ success_msg("Gut gemacht! Fahren Sie mit der nächsten Übung fort, um sich mehr
 --- type:NormalExercise xp:100 skills:1 key:27976b79f4
 ## Vektorenauswahl: die guten Zeiten (3)
 
-Das Auswählen mehrerer Elemente von `poker_vector` mit `c(2, 3, 4)` ist nicht sehr angenehm. Viele Datascientists sind faule Menschen, so dass Sie einen leichteren Weg aussuchen, um dies zu tun: `c(2, 3, 4)` kann mit `2:4` abgekürzt werden. Dies gerneriert einen Vektor mit allen natürlichen Nummern von 2 bis zu 4.
+Das Auswählen mehrerer Elemente von `poker_vector` mit `c(2, 3, 4)` ist nicht sehr angenehm. Viele Data Scientists sind faule Menschen, so dass Sie einen leichteren Weg suchen, um dies zu tun: `c(2, 3, 4)` kann mit `2:4` abgekürzt werden. Dies generiert einen Vektor mit allen natürlichen Nummern von 2 bis zu 4.
 
-Ein anderer Weg, um die Wochenmitte Ergebnisse zu finden, ist `poker_vector[2:4]`. Beachten Sie, wie der Vektor `2:4` zwischen den eckigen Klammern platziert wird, um die Elemente von 2 bis zu 4 zu wählen. 
+Ein anderer Weg, um die Ergebnisse der Wochenmitte zu finden, ist `poker_vector[2:4]`. Beachten Sie, wie der Vektor `2:4` zwischen den eckigen Klammern platziert wird, um die Elemente von 2 bis zu 4 zu wählen. 
 
 *** =instructions
-Weisen Sie dem `roulette_selection_vector` die Roulett Ergebnisse von Dienstag bis Freitag zu; nutzen Sie `:` damit es für Sie einfacher ist.
+Weisen Sie dem `roulette_selection_vector` die Roulett-Ergebnisse von Dienstag bis Freitag zu; nutzen Sie `:` damit es für Sie einfacher ist.
 
 *** =hint
 Weisen Sie eine Auswahl von `roulette_vector` dem `roulette_selection_vector` durch das Stellen von `2:5` zwischen den eckigen Klammern zu. 
@@ -763,7 +763,7 @@ success_msg("Großartig! Awesome! Der Doppelpunkt Operator ist sehr nützlich un
 --- type:NormalExercise xp:100 skills:1 key:e6c263ddee
 ## Vektorenauswahl: Die guten Zeiten (4)
 
-Eine andere Möglichkeit, die vorherige Übung zu bewältigen ist das Verwenden von Namen der Vektorelemente (Montag, Dienstag, ...) statt ihrer numerischen Positionen. Zum Beispiel, 
+Eine andere Möglichkeit, die vorherige Übung zu bewältigen, ist das Verwenden der Namen der Vektorelemente (Montag, Dienstag, ...) statt ihrer numerischen Positionen. Zum Beispiel: 
 
 ```
 poker_vector["Montag"]
@@ -771,7 +771,7 @@ poker_vector["Montag"]
 
 wählt das erste Element von `poker_vector`, da `"Montag"` der Name des ersten Elements ist.
 
-Genau wie Sie in der vorherigen Übung mit Numeric geübt haben, können Sie auch die Elementnamen verwenden, um mehrere Elemente auszuwählen, zum Beispiel: 
+Genau wie Sie in der vorherigen Übung mit Numeric geübt haben, können Sie auch die Elementnamen verwenden, um mehrere Elemente auszuwählen. Zum Beispiel: 
 
 ```
 poker_vector[c("Monday","Tuesday")]
@@ -849,7 +849,7 @@ Logische Vergleichsoperatoren sind:
 - `==` für gleich
 - `!=` für ungleich
 
-Wie im vorherigen Kapitel gesehen, gibt `6 > 5` `TRUE` zurück. Das Gute in R ist, dass Sie diese Vergleichsoperatoren auch auf Vektoren anwenden können. Zum Beispiel:
+Wie im vorherigen Kapitel gesehen, gibt `6 > 5` `TRUE` zurück. Das Gute an R ist, dass Sie diese Vergleichsoperatoren auch auf Vektoren anwenden können. Zum Beispiel:
 
 ```
 > c(4, 5, 6) > 5
@@ -920,7 +920,7 @@ success_msg("Sehr gut!")
 
 Das Arbeiten mit Vergleichen macht Ihr datenanalytisches Leben leichter. Statt eine Teilmenge von Tagen zu wählen (wie zuvor), können Sie ganz einfach R fragen, an welchen Tagen eine positive Rendite realisiert wurde.
 
-In den vorherigen Übungen verwendeten Sie `selection_vector <- poker_vector > 0`, um die Tage zu finden, an denen Sie positive Einnahmen beim Pokern gemacht haben. 
+In den vorherigen Übungen verwendeten Sie `selection_vector <- poker_vector > 0`, um die Tage zu finden, an denen Sie positive Einnahmen beim Pokern erzielten. 
 
 Sie können die gewünschten Elemente durch das Platzieren von `selection_vector` zwischen den eckigen Klammern wählen:
 
