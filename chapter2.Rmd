@@ -522,7 +522,7 @@ success_msg("Sehr gut. Auch wenn das ziemlich schlechte Nachrichten sind...")
 
 Es sieht also so aus, als würden Sie Geld verlieren. Es ist an der Zeit, Ihre Strategie zu überdenken und anzupassen. Dies wird einige tiefere Analysen erfordern... 
 
-Nach einem kurzen Brainstorming im Jacuzzi Ihres Hotels realisieren Sie, dass eine mögliche Erklärung sein könnte, dass sich Ihre Fähigkeiten beim Poker, nicht aber beim Roulette, verbessert haben. Vielleicht sind deswegen Ihre Gesamtgewinne beim Poker höher (or `>` ) als beim Roulette.
+Nach einem kurzen Brainstorming im Jacuzzi Ihres Hotels realisieren Sie, dass eine mögliche Erklärung sein könnte, dass sich Ihre Fähigkeiten beim Poker, nicht aber beim Roulette, verbessert haben. Vielleicht sind deswegen Ihre Gesamtgewinne beim Poker höher (oder `>` ) als beim Roulette.
 
 *** =instructions
 - Berechnen Sie `total_poker` und `total_roulette`, wie in der vorherigen Übung. Verwenden Sie die Funktion `sum()` zweimal.
